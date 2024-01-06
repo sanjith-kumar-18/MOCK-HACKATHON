@@ -21,11 +21,12 @@ for j in data["neighbourhoods"]:
     distances.append(neighborhood_Distance)
     #print(distances)
 #
+untained_distances=distances.copy()
 order_quantity=[]
 
 for i in data["neighbourhoods"]:
     order_quantity.append(data["neighbourhoods"][i]["order_quantity"])
-#print(order_quantity)
+print(order_quantity)
 #print(sum(order_quantity))
 
 print(restaurants)
@@ -34,6 +35,7 @@ for i in range(0,len(distances)):
     distances[i].insert(0,restaurants[i])
 restaurants.insert(0,0)
 distances.insert(0,restaurants)
-
+"""
 for i in range(len(distances)):
     print(distances[i])
+"""
