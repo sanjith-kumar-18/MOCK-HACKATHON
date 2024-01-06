@@ -142,7 +142,6 @@ for i in range(len(path)):
         output_path.append("n19")
     else:
         print("0")
-output_path.append("r0")
 value=output[0]    
 dct={"v0":{"path":output_path}}
 print(dct)
